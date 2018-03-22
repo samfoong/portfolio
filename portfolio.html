@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Sam Foong</title>
+    <!-- Adding a favicon -->
+    <!-- <link rel="" type=" " href="img/favicon.png"> -->
+</head>
+
+<body> 
+    <div class="container"></div>
+    <div class="header">
+        <h1>Hey, I'm <br/><strong>---SAM FOONG---</strong></h1> 
+    </div>
+</h1>
+
+<div class="navbar">
+<ul>
+    <li><a href="#profile">Profile</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+</ul>
+</div>
+
+<div class="profile scrollspy" id="profile">
+    <h2>Profile</h2>
+    <div class="aboutme">
+        <h3>About Me</h3>
+        <p>I am currently on the path to become a Full Stack Web Developer, completing a Diploma of Information Technology at Coder Academy. Previously in the banking sector, I have decided to dive into the world of technology.</p>
+    </div>
+    
+    <div class="details">
+        <h3>Details</h3>
+        <p>Name: Sam Foong <br/>Age: 30 years old <br/>Location: Sydney, Australia </p>
+    </div>
+</div>
+
+<div class="education scrollspy" id="education">
+        <h2>Education</h2>
+        <div class="coder">
+        <h4>Coder Academy<br/>Feb 2018-Current<br/></h4> 
+    </div>    
+    
+    <div class="coderinfo">
+        <h4>Course - Diploma of Information Technology </h4>
+        <h5>The education is the whole package being a front end and a back end, I've learned different programing languages, Ruby, HTML and CSS. Besides that, i am being thought other tools of the trade such as Github, Ruby on Rails.</h5>
+    </div>
+
+
+    <div class="nsw">  
+        <h4>University of New South Wales<br/>March 2008 - March 2010 </h4>
+    </div>
+
+    <div class="nswinfo">
+        <h4>Bachelor of Commerce (Accounting &amp; Finance)</h4>
+        <h5>This course help me gain a good understanding of the vvarious aspects of business, and develop specialist knowledge in accounting and finance</h5>
+</div>
+
+<div class="skills scrollspy" id="skills">
+    <h2> Skills &amp; Abilities</h2>
+    <i class></i>
+</div>
+
+<div class="projects scrollspy" id="projects">
+    <h2>Projects</h2>
+</div>
+
+
+<div class="contact scrollspy" id="contact">
+    <h2>Contact Me</h2>
+    <ul>
+        <li><i class="fas fa-at"></i></li>
+        <li><i class="fab fa-linkedin-in"></i></li>
+        <li><i class="fab fa-github"></i></li>
+    </ul>
+</div>
+
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+ 
+<script>
+$(document).ready(function(){
+    $(window).bind('scroll', function() {
+    var currentTop = $(window).scrollTop();
+    var elems = $('.scrollspy');
+    elems.each(function(index){
+      var elemTop 	= $(this).offset().top;
+      var elemBottom 	= elemTop + $(this).height();
+      if(currentTop >= elemTop && currentTop <= elemBottom){
+
+        var id 		= $(this).attr('id');
+        console.log(id)
+        var navElem = $('a[href="#' + id+ '"]');
+        $('.selected').removeClass('selected')
+        navElem.addClass('selected')
+      }
+    })
+}); 
+})
+</script>
+
+</body>
+</html>

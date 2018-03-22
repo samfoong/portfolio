@@ -1,0 +1,151 @@
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li a {
+    display: block;
+    width: 60px;
+}
+
+.navbar {
+    list-style-type: none;
+    background-color: #DCDCDC;
+    right: 25px;
+    top: 200px;
+    position: fixed;
+    width:100px;
+}
+
+.navbar a {
+    padding: 20px;
+    /* display: block; */
+    text-align: center;
+    text-decoration: none;
+    background-color: black;
+    color: white;
+}
+.navbar a:hover,.navbar a.selected {
+    background-color:#00AA8D;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+  }
+
+.container {
+    margin: 0 auto;
+    max-width: 940px; 
+}
+
+.header {
+    position: relative;
+    background: url("https://cdn.pixabay.com/photo/2018/01/31/12/16/architecture-3121009_960_720.jpg") no-repeat center center;
+    background-size: cover;
+    height: 800px;
+}
+
+.header .container {
+    position: relative;
+    top: 200px;
+}
+
+.header h1 {
+    color: #fff;
+    line-height: 80px; 
+    font-size: 40px;
+    margin-top: 0px;
+    margin-bottom: 80px;
+    text-align: center;
+    padding: 270px 0 0 0;
+  }
+
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+    color:#00AA8D;
+}
+
+h3 {
+    text-align: center;
+}
+
+.profile {
+    width: 100%;
+    height:250px;
+    
+}
+
+.aboutme {
+    float: left;
+    padding:0%;
+    width: 50%;
+}
+
+.details {
+    float: right;
+    padding: 0%;
+    width: 50%;
+}
+
+.education {
+    padding: 0 1.5%;
+    width: 100%;
+    height:400px;
+    background-color: #DCDCDC;
+}
+
+.coder {
+    float: left;
+    width: 50%;
+    vertical-align: text-top;
+}
+
+.coderinfo {
+    float: right;
+    width: 50%;
+    vertical-align: text-top;
+}
+
+.nsw {
+    float: left;
+    width: 50%;
+    vertical-align: text-top;
+}
+
+.nswinfo{
+    float: right;
+    width: 50%;
+    vertical-align: text-top;
+}
+
+.skills {
+    padding: 0 1.5%;
+    width: 100%;
+    
+}
+
+.projects {
+    padding: 0 1.5%;
+    width: 100%;
+    background-color:  #DCDCDC;
+}
+
+p {
+    text-align: center;
+}
+
+/* @media only screen and (max-width: 850px) {
+    .header h1 {
+        padding: 70px;
+    }
+} */
