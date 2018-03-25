@@ -5,111 +5,185 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" 
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Devicon for Skills -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <!-- Social Media Buttons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <!-- Adding Favicon  -->
+    <link rel="shortcut icon" type="png" href="SF.png">
     <title>Sam Foong</title>
-    <!-- Adding a favicon -->
-    <!-- <link rel="" type=" " href="img/favicon.png"> -->
 </head>
-
-<body> 
-    <div class="container"></div>
-    <div class="header">
-        <h1>Hey, I'm <br/><strong>---SAM FOONG---</strong></h1> 
+<body>
+    
+    <!-- Adding a navbar
+    <nav class="navbar">
+        <span class="open-slide">
+            <a href="#" onclick="openSlideMenu()">
+                <svg width="30" height="30">
+                    <path d="M0,5 30,5" stroke="#333"
+                    stroke-width="5"/>
+                    <path d="M0,14 30,14" stroke="#333"
+                    stroke-width="5"/>
+                    <path d="M0,23 30,23" stroke="#333"
+                    stroke-width="5"/>
+                </svg>
+            </a>
+        </span>
+        
+        <ul class="navbar-nav">
+            <li><a href="#section-a">About Me</a></li>
+            <li><a href="#section-b">Education</a></li>
+            <li><a href="#section-c">Experience</a></li>
+            <li><a href="#section-d">Skills</a></li>
+            <li><a href="#section-e">Projects</a></li>
+            <li><a href="#section-f">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <div id="side-menu" class="side-nav">
+        <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+        <a href="#section-a">About Me</a>
+        <a href="#section-b">Education</a>
+        <a href="#section-c">Experience</a>
+        <a href="#section-d">Skills</a>
+        <a href="#section-e">Projects</a>
+        <a href="#section-f">Contact</a>
     </div>
-</h1>
-
-<div class="navbar">
-    <ul>
-        <li><a href="#profile">Profile</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+    
+     -->
+    
+    <!-- Header Showcase -->
+    <header id="showcase" class="grid">
+        <div class="sam-image"></div>
+        <div class="content-wrap">
+            <h1> Hey , I'm <br/><img src="samedit-compressor.png"></h1>
+        </div>
+    </header>
+    
+    <!-- Main Area -->
+    <main id="main">
+        <!-- Section A -->
+        <section id="section-a" class="grid">
+            <div class="content-wrap">
+                <h2 class="content-title">About Me</h2>
+                <p>I am currently on the path to become a Full Stack Web Developer, completing a Diploma of Information Technology at Coder Academy. Previously in the banking sector, I have decided make a career change to dive into the world of technology. Programming teaches me how to think logically and become more detail-orientated. In my spare time I am learning how to improve my video editing skills. I am currently based in Sydney, Australia.</p>
+                
+            </div>
+        </section>
+        <!-- Section B -->
+        <section id="section-b" class="grid">
+            
+            <ul>
+                <li>
+                    <div class="education">
+                        <h2 class="content-title">Education</h2>
+                        <div class="education-content">
+                            <h3 class="education-title">Coder Academy <br/>Feb 2018 - Current</h3>
+                            <h3 class="education-info">Course-Diploma of Information Technology</h3>
+                            <img src="coder-compressor.png" alt="Coder Academy Logo">
+                            <p>Coder Academy curates the latest in demand skills and makes sure that once we graduate we have the knowledge to be ready for future job market. The education is as intensive as a bootcamp should be. Lecturers and teaching assistance exercised my creative and logical muscle and strengthened my tolerance to not giving up when the going gets hard.
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="education-content">
+                        <h3 class="education-title">University of New South Wales<br/>March 2018 - March 2010</h3>
+                        <h3 class="education-info">Bachelor of Commerce(Accounting &amp; Finance)</h3>
+                        <img src="unsw-compressor.jpg" alt="A picture of University of New South Wales">
+                        <p>UNSW presented unprecedented scale of diversity of opportunity. My three years of phenomenal lecturers helped me gain a good understanding of the various aspects of business, and develop specialist knowledge in accounting and finance. This course has help me develop my business acumen, financial literacy and analytical skills</p>
+                    </div>
+                </li>
+            </div>
+        </li>
     </ul>
-</div>
+</section>
+<!-- Section C -->
+<section id="section-c" class="grid"> 
+    
+    <ul>
+        <li>
+            <div class="experience">
+                <h2 class="content-title">Experience</h2>
+                <div class="experience-content">
+                    <h3 class="experience-title">CBA Analyst<br/>October 2016 - February 2017</h3>
+                    <img src="cba-compressor.png" alt="Commonwealth Bank Logo">
+                    <p>Manages the ongoing processing of complex structured transactions, generated by Institutional Banking, Global Markets &amp; Treasury businesses, to ensure the Bank and the client deliver on transactional obligations. In this way our team seeks to ensure the Bank achieves its anticipated returns on existing deals and frees up the sales force to focus on new transactions.
+                    </p>
+                </div>
+            </div>
+        </li>
+        <li>
+            
+            <div class="experience-content">
+                <h3 class="experience-title">CBA Settlement Officer<br/>January 2014 - October 2016</h3>
+                <img src="commsec-compressor.png" alt="Commsec Logo">
+                <p>Process and reconciles trades in addition to currency exchange settlements ensuring all trade transactions agreed with established processes and procedures and minimizing operational risk.
+                </p>
+            </div>
+        </div>
+    </li>
+</ul>
+</section>
 
-<div class="profile scrollspy" id="profile">
-    <h2>Profile</h2>
-    <div class="aboutme">
-        <h3>About Me</h3>
-        <p>I am currently on the path to become a Full Stack Web Developer, completing a Diploma of Information Technology at Coder Academy. Previously in the banking sector, I have decided to dive into the world of technology.</p>
-    </div>
-    
-    <div class="details">
-        <h3>Details</h3>
-        <p>Name: Sam Foong <br/>Age: 30 years old <br/>Location: Sydney, Australia </p>
-    </div>
-</div>
-
-<div class="education scrollspy" id="education">
-    <h2>Education</h2>
-    <div class="coder">
-        <h4>Coder Academy<br/>Feb 2018-Current<br/></h4> 
-    </div>    
-    
-    <div class="coderinfo">
-        <h4>Course - Diploma of Information Technology </h4>
-        <h5>The education is the whole package being a front end and a back end, I've learned different programing languages, Ruby, HTML and CSS. Besides that, i am being thought other tools of the trade such as Github, Ruby on Rails.</h5>
-    </div>
-    
-    
-    <div class="nsw">  
-        <h4>University of New South Wales<br/>March 2008 - March 2010 </h4>
-    </div>
-    
-    <div class="nswinfo">
-        <h4>Bachelor of Commerce (Accounting &amp; Finance)</h4>
-        <h5>This course help me gain a good understanding of the vvarious aspects of business, and develop specialist knowledge in accounting and finance</h5>
-    </div>
-</div>
-    
-    <div class="skills scrollspy" id="skills">
-        <h2> Skills &amp; Abilities</h2>
-        <i class></i>
-    </div>
-    
-    <div class="projects scrollspy" id="projects">
-        <h2>Projects</h2>
-    </div>
-    
-    
-    <div class="contact scrollspy" id="contact">
-        <h2>Contact Me</h2>
+<!-- Section D -->
+<section id="section-d" class="grid">
+    <div class="content-wrap">
+        <h2 class="content-title">Skills and Abilities</h2>
         <ul>
-            <li><i class="fas fa-at"></i></li>
-            <li><i class="fab fa-linkedin-in"></i></li>
-            <li><i class="fab fa-github"></i></li>
+            <li><i class="devicon-ruby-plain-wordmark colored skill-icon"></i></li>
+            <li><i class="devicon-rails-plain-wordmark colored skill-icon"></i></li>
+            <li><i class="devicon-github-plain-wordmark colored skill-icon"></i></li>
+            <li><i class="devicon-heroku-plain-wordmark colored skill-icon"></i></li>
+            <li><i class="devicon-html5-plain-wordmark colored skill-icon"></i></li>
+            <li><i class="devicon-css3-plain-wordmark colored skill-icon"></i></li>
         </ul>
     </div>
+</section>
+
+
+<!-- Section E -->
+<section id="section-e" class="grid">
+    <div class="content-wrap">
+        <ul>
+            <li>
+                <div class=Projects>
+                    <h2 class="content-title">Projects</h2>
+                    <a href="https://github.com/samfoong/Horoscope-Reader"><img src="horoscope-compressor.png" alt="A screenshot of my horoscope reader terminal app"><a/>
+                        <div class="terminal-content">
+                            <h3 class="terminal-title">Horoscope Reader Terminal App</h3>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
     
+    <!-- Section F -->
+    <section id="section-f" class="grid">
+        <div class="content-wrap">
+            <div class="social">
+                <h2 class="content-title">Contact Me</h2>
+                <a href="https://au.linkedin.com/in/sam-foong-2071a250"><i class="fa fa-linkedin"></i></a>
+                <a href="https://github.com/samfoong"><i class="fa fa-github"></i></a>
+                <a href="https://medium.com/@samfoong88"><i class="fa fa-medium"></i></a>
+                <a href="mailto:samfoong88@gmail.com"><i class="fa fa-at"></i></a>
+            </div>
+        </div>
+    </section>
     
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    
-    <script>
-        $(document).ready(function(){
-            $(window).bind('scroll', function() {
-                var currentTop = $(window).scrollTop();
-                var elems = $('.scrollspy');
-                elems.each(function(index){
-                    var elemTop 	= $(this).offset().top;
-                    var elemBottom 	= elemTop + $(this).height();
-                    if(currentTop >= elemTop && currentTop <= elemBottom){
-                        
-                        var id 		= $(this).attr('id');
-                        console.log(id)
-                        var navElem = $('a[href="#' + id+ '"]');
-                        $('.selected').removeClass('selected')
-                        navElem.addClass('selected')
-                    }
-                })
-            }); 
-        })
-    </script>
-    
+    <!-- <script>
+        function openSLideMenu() {
+            document.getElementById('side-menu').style.width ='250px';
+            document.getElementById('main').style.marginLeft ='250px';
+        }
+        
+        function closeSLideMenu() {
+            document.getElementById('side-menu').style.width ='0';
+            document.getElementById('main').style.marginLeft ='0';
+        }
+    </script> -->
 </body>
 </html>
+
+<!-- All images have been compress via compressor -->
