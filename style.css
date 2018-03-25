@@ -1,262 +1,156 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-li a {
-    display: block;
-    width: 60px;
-}
-
-.navbar {
-    list-style-type: none;
-    right: 20px;
-    top: 200px;
-    position: fixed;
-    min-width: 150px;
-}
-
-.navbar a {
-    padding: 20px;
+body {
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #fff;
+    color:black;
+    font-size: 1.1em;
+    line-height:1.5;
     text-align: center;
-    text-decoration: none;
-    background-color:black;
-    color: white;
-    width: 70px;
-}
-.navbar a:hover,.navbar a.selected {
-    background-color:#00AA8D;
 }
 
-html, body {
-    margin: 0;
-    padding: 0;
-  }
-
-
-  
-  body {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-  }
-
-.container {
-    margin: 0 auto;
-    max-width: 940px; 
+img {
+    display:block;
+    width:100%;
+    height: auto;
 }
 
-.header {
-    position: relative;
-    background: url("https://cdn.pixabay.com/photo/2018/01/31/12/16/architecture-3121009_960_720.jpg") no-repeat center center;
-    background-size: cover;
-    height: 800px;
+h1, h3 {
+    margin:0;
+    padding: 1em 0;
 }
 
-.header .container {
-    position: relative;
-    top: 200px;
+p{
+    margin:0;
+    padding: 1em 0;
 }
 
-.header h1 {
+/* Header Showcase */
+#showcase {
+    min-height: 450px;
     color: #fff;
-    line-height: 80px; 
-    font-size: 40px;
-    margin-top: 0px;
-    margin-bottom: 80px;
-    text-align: center;
-    padding: 270px 0 0 0;
-  }
-
-
-h2 {
-    text-align: center;
-    font-size: 40px;
-    color:#00AA8D;
-}
-
-h3 {
     text-align: center;
 }
 
-.profile {
+#showcase .sam-image {
+    position: absolute;
+    background-image: url("sam-image.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
-    height:250px;
-    
-    
-}
-.my-info {
-    display: grid;
-    grid-template-columns:  1fr 0fr 1fr;
-    grid-column-gap: 1em;
-    padding: 0 1em;
-    margin-left: 10em;
+    height: 450px;
+    z-index:-1;
 }
 
-.my-info h3 {
-    text-align: left;
+#showcase h1 {
+    padding-top: 150px;
+    padding-bottom:0;
 }
 
+#showcase .content-wrap,
+#section-a .content-wrap {
+    padding:0 1.5em;
+}
 
-/* .aboutme {
+/* Section A Profile */
+
+#section-a {
+    color: #000000;
+    padding-bottom: 2em;
+}
+
+/* Section B Education */
+
+#section-b {
+    padding: 2em 1em 1em;
+    background: #DCDCDC;
+    color: black;
+}
+
+#section-b ul {
+    list-style: none;
+    margin: 0;
+    padding:0;
+}
+
+#section-b li {
+    margin-bottom: 1em;
+}
+
+.education-content {
+    padding: 1.5em;
+}
+
+/* Section C Experience */
+
+#section-c {
+    padding: 2em 1em 1em;
+    color: black;
+}
+
+#section-c ul {
+    list-style: none;
+    margin: 0;
+    padding:0;
+}
+
+#section-c li {
+    margin-bottom: 1em;
+}
+
+.experience-content {
+    padding: 1.5em;
+}
+
+/* Section D Skills */
+
+#section-d {
+    padding: 1em;
+    background: #DCDCDC;
+}
+
+#section-d ul {
+    list-style: none;
     text-align: center;
-    float: left;
-    width: 35%;
-    padding-left:10%;
+    font-size: 400%;
 }
 
-.details {
-    float: right;
-    padding: 0%;
-    width: 35%;
-    padding-right:10%;
-} */
-
-.education {
-    width: 100%;
-    height:500px;
-    background-color: #DCDCDC;
-    padding-right: 15%;
-}
-
-/* .code {
-    height:150px;
-}
-
-.coder {
-    float: left;
-    width: 20%;
-    vertical-align: text-top;
-    padding-left: 15%;
-}
-
-.coderinfo {
-    float: right;
-    width: 45%;
-    vertical-align: text-top;
-    padding-right: 15%;
-} */
-
-.coder, .nsw {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-
-.code, .nsw {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-column-gap: 1em;
-    margin-top: 3em;
-    text-align: left;
-}
-
-/* .nsw {
-    float: left;
-    width: 20%;
-    vertical-align: text-top;
-    padding-left: 15%;
-}
-
-.nswinfo{
-    float: right;
-    width: 45%;
-    vertical-align: text-top;
-    padding-right: 15%;
-} */
-
-
-.experience {
-    width: 100%;
-    height:600px;
-}
-
-.pdm {
-    height:250px;
-}
-
-.analyst {
-    float: left;
-    width: 20%;
-    vertical-align: text-top;
-    padding-left:15%;
-}
-
-.analystinfo {
-    float: right;
-    width: 45%;
-    vertical-align: text-top;
-    padding-right: 15%;
-}
-
-.sett {
-    height:200px;
-}
-
-.settofficer {
-    float: left;
-    width: 20%;
-    vertical-align: text-top;
-    padding-left: 15%;
-}
-
-.settinfo{
-    float: right;
-    width: 45%;
-    vertical-align: text-top;
-    padding-right: 15%;
-}
-
-.skills {
-    width: 100%;
-    text-align: center;
-    background-color: #DCDCDC;
-    
-}
-
-.skill-icon {
-    font-size: 100px;
-    margin: 35px;
-    text-align: center;
-}
-
-ul li {
+#section-d li {
     display: inline;
 }
 
-.projects {
-    width: 100%;
-    height: 377px;
+
+/* Section E Projects */
+#section-e {
+    padding: 2em;
 }
 
-.terminal {
-    float: left;
-    width: 30%;
-    padding-left: 15%
+#section-e ul {
+    list-style: none;
 }
 
-.horoscope {
-    float: right;
-    width: 30%;
-    vertical-align: text-top;
-    padding-right: 15%;
+/* Section F Contact Me */
+
+#section-f {
+    padding: 2em;
+    background: grey;
+    color: black;
 }
 
-/* p {
-    text-align: center;
-} */
-
-.contact {
-    background-color:  #DCDCDC;
-    height: 750px;
+.content-title {
+    color:#00AA8D;
     text-align: center;
 }
 
+.social {
+    text-align: center;
+}
 
 .social i {
     margin:0px 80px;
-    padding: 20px;
+    padding: 10px;
     width: 40px;
     height: 40px;
     background: #eee;
@@ -279,7 +173,7 @@ i.fa-linkedin:hover {
 
 i.fa-github {
     background: #333;
-    }
+}
 i.fa-github:hover {
     color: #333;
     background:#fff;
@@ -288,7 +182,7 @@ i.fa-github:hover {
 
 i.fa-medium {
     background:#bd2c00;
-        }
+}
 i.fa-medium:hover {
     color: #333;
     background:#fff;
@@ -297,82 +191,69 @@ i.fa-medium:hover {
 
 i.fa-at {
     background:#333;
-        }
+}
 i.fa-at:hover {
     color: #333;
     background:#fff;
     border:1px solid #55acee;
 }
 
-.menu {
-    position: fixed;
-    display: none;
+img {
+    border-radius: 25px;
 }
 
-.profile {
-    height: 26em;
-    margin-bottom: 2em;
+/* Media Queries */
+
+@media(min-width: 700px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 30em)) 1fr;
+    }
+    .content-wrap, 
+    #section-b ul {
+        grid-column: 2/4;
+    }
+
+    .content-wrap, 
+    #section-c ul {
+        grid-column: 2/4;
+    }
+    .content-wrap, 
+    #section-e ul {
+        grid-column: 2/4;
+    }
+    img {
+        display:block;
+        width:50%;
+        height: auto;
+    }
+
+    .terminal-content {
+        width:50%
+    }
+
+.education-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
-@media only screen and (max-width: 476px) {
-    /* .header h1 {
-        padding: 70px;
-    } */
-
-    .profile {
-        height: 26em;
-        margin-bottom: 2em;
-    }
-    .aboutme, .details {
-        width: 100%;
-    }
-    .my-info {
-        display: grid;
-        grid-template-columns: 100%;
-        margin-left: 0;
-    }
-    .menu {
-        display: block;
-    }
-    .navbar {
-        display: none;
-    }
-    .social {
-        /* max-width: 40%; */
-        display: grid;
-        grid-template-columns: 20% 20% 20% 20%;
-        grid-column-gap: 1em;
-        margin-left: -50px;
-    }
-    /* .edu-section {
-        height: 22em;
-        margin-bottom: 3em;
-        display: grid;
-        grid-template-rows: 1fr 1fr;
-    } */
-
-    .education {
-        height: 42em;
-        margin-bottom: 3em;
-    }
-
-    .coder, .nsw {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    /* .code, nsw {
-        display: grid;
-        grid-template-rows: 1fr 2fr;
-        grid-row-gap: 1em;
-        margin-top: 3em;
-        text-align: left;
-    } */
-
-    .code h4, .nsw h4 {
-        margin: 0;
-        text-align: left;
-    }
 
 
+
+}
+
+
+
+@media(min-width: 1200px) {
+    .content-title {
+        color:#00AA8D;
+        text-align: center;
+        font-size: 300%;
+    }
+
+    #section-d ul {
+        list-style: none;
+        text-align: center;
+        font-size: 600%;
+    }
 
 }
