@@ -15,6 +15,7 @@
 </head>
 
 <body> 
+    <!-- <p class='menu'>menu</p> -->
     <div class="container"></div>
     <div class="header">
         <h1>Hey, I'm <br/><strong>---SAM FOONG---</strong></h1> 
@@ -34,41 +35,46 @@
 
 <div class="profile scrollspy" id="profile">
     <h2>Profile</h2>
-    <div class="aboutme">
-        <h3>About Me</h3>
-        <p>I am currently on the path to become a Full Stack Web Developer, completing a Diploma of Information Technology at Coder Academy. Previously in the banking sector, I have decided to dive into the world of technology.</p>
-    </div>
-    
-    <div class="details">
-        <h3>Details</h3>
-        <p>Name: Sam Foong <br/>Age: 30 years old <br/>Location: Sydney, Australia </p>
+    <div class="my-info">
+        <div class="aboutme">
+            <h3>About Me</h3>
+            <p>I am currently on the path to become a Full Stack Web Developer, completing a Diploma of Information Technology at Coder Academy. Previously in the banking sector, I have decided to dive into the world of technology.</p>
+        </div>
+        <br>
+        <div class="details">
+            <h3>Details</h3>
+            <p>Name: Sam Foong <br/>Age: 30 years old <br/>Location: Sydney, Australia </p>
+        </div>
     </div>
 </div>
 
+
 <div class="education scrollspy" id="education">
     <h2>Education</h2>
-    
-    <div class="code">
-        <div class="coder">
-            <h4>Coder Academy<br/>Feb 2018-Current<br/></h4> 
-        </div>    
+    <div class="edu-section">
+        <div class="code">
+            <div class="coder">
+                <h4>Coder Academy<br/>Feb 2018-Current<br/></h4> 
+            </div>    
+            
+            <div class="coderinfo">
+                <h4>Course - Diploma of Information Technology </h4>
+                <h5>The education is the whole package being a front end and a back end, I've learned different programing languages, Ruby, HTML and CSS. Besides that, i am being thought other tools of the trade such as Github, Ruby on Rails.</h5>
+            </div>
+        </div>
         
-        <div class="coderinfo">
-            <h4>Course - Diploma of Information Technology </h4>
-            <h5>The education is the whole package being a front end and a back end, I've learned different programing languages, Ruby, HTML and CSS. Besides that, i am being thought other tools of the trade such as Github, Ruby on Rails.</h5>
+        <div>
+        <div class="nsw">  
+            <h4>University of New South Wales<br/>March 2008 - March 2010 </h4>
+        </div>
+        
+        <div class="nswinfo">
+            <h4>Bachelor of Commerce (Accounting &amp; Finance)</h4>
+            <h5>This course help me gain a good understanding of the various aspects of business, and develop specialist knowledge in accounting and finance</h5>
         </div>
     </div>
-    
-    
-    <div class="nsw">  
-        <h4>University of New South Wales<br/>March 2008 - March 2010 </h4>
     </div>
-    
-    <div class="nswinfo">
-        <h4>Bachelor of Commerce (Accounting &amp; Finance)</h4>
-        <h5>This course help me gain a good understanding of the various aspects of business, and develop specialist knowledge in accounting and finance</h5>
-    </div>
-</div>
+</div> 
 
 <div class="experience scrollspy" id="experience">
     <h2>Experience</h2>
@@ -84,8 +90,8 @@
             <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, reiciendis harum maiores reprehenderit corrupti rerum laudantium soluta nulla nobis voluptatibus eligendi, fugit dolorum perferendis mollitia qui cum, fuga consequuntur. Nobis.</h5>
         </div>
     </div>
-
-
+    
+    
     <div class="sett">
         <div class="settofficer">
             <h4>CBA</h4>
@@ -157,7 +163,14 @@
                 }
             })
         }); 
+        
+        
     })
-</script>    
+    // const menu = document.querySelector('.menu');
+    // const navbar = document.querySelector('.navbar');
+    // menu.addEventListener('click', function() {
+        //     navbar.style.display = 'block';
+        // });
+    </script>    
 </body>
 </html>

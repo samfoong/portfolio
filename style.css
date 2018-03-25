@@ -35,6 +35,8 @@ html, body {
     margin: 0;
     padding: 0;
   }
+
+
   
   body {
     font-family: 'Roboto', sans-serif;
@@ -85,8 +87,21 @@ h3 {
     
     
 }
+.my-info {
+    display: grid;
+    grid-template-columns:  1fr 0fr 1fr;
+    grid-column-gap: 1em;
+    padding: 0 1em;
+    margin-left: 10em;
+}
 
-.aboutme {
+.my-info h3 {
+    text-align: left;
+}
+
+
+/* .aboutme {
+    text-align: center;
     float: left;
     width: 35%;
     padding-left:10%;
@@ -97,7 +112,7 @@ h3 {
     padding: 0%;
     width: 35%;
     padding-right:10%;
-}
+} */
 
 .education {
     width: 100%;
@@ -106,7 +121,7 @@ h3 {
     padding-right: 15%;
 }
 
-.code {
+/* .code {
     height:150px;
 }
 
@@ -122,9 +137,22 @@ h3 {
     width: 45%;
     vertical-align: text-top;
     padding-right: 15%;
+} */
+
+.coder, .nsw {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-.nsw {
+.code, .nsw {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-column-gap: 1em;
+    margin-top: 3em;
+    text-align: left;
+}
+
+/* .nsw {
     float: left;
     width: 20%;
     vertical-align: text-top;
@@ -136,7 +164,7 @@ h3 {
     width: 45%;
     vertical-align: text-top;
     padding-right: 15%;
-}
+} */
 
 
 .experience {
@@ -215,9 +243,9 @@ ul li {
     padding-right: 15%;
 }
 
-p {
+/* p {
     text-align: center;
-}
+} */
 
 .contact {
     background-color:  #DCDCDC;
@@ -276,8 +304,75 @@ i.fa-at:hover {
     border:1px solid #55acee;
 }
 
-/* @media only screen and (max-width: 850px) {
-    .header h1 {
+.menu {
+    position: fixed;
+    display: none;
+}
+
+.profile {
+    height: 26em;
+    margin-bottom: 2em;
+}
+@media only screen and (max-width: 476px) {
+    /* .header h1 {
         padding: 70px;
+    } */
+
+    .profile {
+        height: 26em;
+        margin-bottom: 2em;
     }
-} */
+    .aboutme, .details {
+        width: 100%;
+    }
+    .my-info {
+        display: grid;
+        grid-template-columns: 100%;
+        margin-left: 0;
+    }
+    .menu {
+        display: block;
+    }
+    .navbar {
+        display: none;
+    }
+    .social {
+        /* max-width: 40%; */
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20%;
+        grid-column-gap: 1em;
+        margin-left: -50px;
+    }
+    /* .edu-section {
+        height: 22em;
+        margin-bottom: 3em;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    } */
+
+    .education {
+        height: 42em;
+        margin-bottom: 3em;
+    }
+
+    .coder, .nsw {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* .code, nsw {
+        display: grid;
+        grid-template-rows: 1fr 2fr;
+        grid-row-gap: 1em;
+        margin-top: 3em;
+        text-align: left;
+    } */
+
+    .code h4, .nsw h4 {
+        margin: 0;
+        text-align: left;
+    }
+
+
+
+}
